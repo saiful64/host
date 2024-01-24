@@ -11,7 +11,7 @@ function App() {
 
   const checkAge = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/checkAge", {
+      const response = await axios.post("https://host-algg-saiful64.vercel.app/checkAge", {
         age,
       })
       setResult(response.data.isAdult ? "Adult" : "Not Adult")
